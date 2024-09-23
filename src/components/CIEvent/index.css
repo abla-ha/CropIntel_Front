@@ -1,0 +1,16 @@
+.cievent {
+    display: flex;
+    gap: 15px;
+    padding: 25px;
+    align-items: center;
+}
+
+.cievent > .icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 8px;
+    background-color: rgba(224, 247, 205, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

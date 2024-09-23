@@ -1,0 +1,21 @@
+.cibutton {
+    background-color: rgba(26, 26, 27, 1);
+    color: rgba(255, 255, 255, 1);
+    padding: 10px;
+    border: none;
+    border-radius: 40.5px;
+    font-family: "IBM Plex Sans", sans-serif;
+    width: 100%;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.cibutton:hover {
+    background-color: rgba(31, 31, 31, 0.856);
+    cursor: pointer;
+}
+
+.cibutton > .loader {
+    width: 100px;
+    height: 100%;
+}

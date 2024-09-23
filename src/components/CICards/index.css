@@ -1,0 +1,12 @@
+.cicards {    
+    padding: 25px;
+}
+
+.cicards > img {
+    width: 100%;
+}
+
+.cicards > div {
+    display: flex;
+    justify-content: space-between;
+}

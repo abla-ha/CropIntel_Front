@@ -1,0 +1,123 @@
+#crops {
+    flex: 1;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+#crops > .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#crops > .grid-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+#crops > .grid-container > .fields-container {
+    margin-top: 25px;
+}
+
+#crops > .grid-container > .fields-container > div {
+    flex: 1;
+    display: flex;
+    gap: 25px;
+}
+
+#crops > .grid-container > .fields-container > div > .field {
+    width: 50%;
+}
+
+#crops > .recommendation-container {
+    margin-top: 55px;
+    width: 100%;
+    text-align: center;
+}
+
+
+#crops > .recommendation-container > h3 {
+    text-align: left;
+}
+
+#crops > .recommendation-container > div {
+    width: 50%;
+    margin: auto;
+    align-items: center;
+    margin-top: 5%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgba(250, 142, 18, 1);
+    text-align: center;
+}
+
+#crops > .recommendation-container .get-started-btn {
+    width: 200px;
+    height: 50px;
+    font-size: 1.2rem;
+    font-weight: light;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 1024px) {
+    #crops > .grid-container {
+        flex-wrap: wrap-reverse;
+    }
+
+    #crops > .grid-container > .fields-container > div {
+        width: 100%;
+    }
+    
+    #crops > .grid-container > .calendar {
+        width: 100%;
+    }
+}
+
+
+.disease-result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+.disease-result p {
+    margin: 10px 0;
+    font-weight: bold;
+    color:black
+}
+
+.explain-btn {
+    background-color: #000; /* Blue */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.explain-btn:hover {
+    background-color: grey;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 800px) {
+    #crops > .grid-container > .fields-container > div {
+        flex-wrap: wrap;
+    }
+
+    #crops > .grid-container > .fields-container > div > .field {
+        width: 100%;
+    }
+}

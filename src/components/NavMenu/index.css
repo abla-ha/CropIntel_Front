@@ -1,0 +1,119 @@
+.navmenu {
+    padding: 35px 20px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    box-sizing: border-box;
+    z-index: 99;
+}
+
+.navmenu * {
+    font-family: "IBM Plex Sans", sans-serif;
+    text-decoration: none;
+}
+
+.navmenu > .nav-container {
+    width: 90px;
+    height: 100%;
+    background-color: rgba(30, 30, 30, 1);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+    box-sizing: border-box;
+
+    transition: width 0.2s ease;
+    &:hover {
+        width: 230px;
+    }
+}
+
+.navmenu > .nav-container > .nav-header .nav-item,
+.navmenu > .nav-container > .nav-body .nav-item,
+.navmenu > .nav-container > .nav-footer .nav-item {
+    width: 230px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+    &>.icon-container {
+        width: 45px;
+    }
+
+    & > p {
+        transition: color 0.2s ease;
+    }
+
+    &:hover > p {
+        color: rgba(49, 159, 67, 0.5);
+    }
+}
+
+.navmenu > .nav-container > .nav-header > .nav-item > h2 {
+    color: white;
+}
+
+.navmenu > .nav-container > .nav-header > .nav-item > h2 > .colored {
+    color: rgba(49, 159, 67, 1);
+}
+
+.navmenu > .nav-container > .nav-body {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.navmenu > .nav-container > .nav-body .nav-item > p {
+    font-weight: 600;
+}
+
+.navmenu > .nav-container > .nav-body .nav-item > .normal {
+    color: #FFFFFF;
+}
+
+.navmenu > .nav-container > .nav-body .nav-item > .colored {
+    color: rgba(49, 159, 67, 1);
+}
+
+.navmenu > .nav-container > .nav-footer > .nav-item > p {
+    color: rgba(179, 179, 179, 1);
+}
+
+.navmenu > .nav-container > .nav-header > .close-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navmenu > .nav-container > .nav-header > .close-container >  .close-nav {
+    display: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .navmenu {
+        padding: 0;
+        left: 0;
+    }
+    
+    .navmenu > .nav-container {
+        width: 230px;
+        border-radius: 0;
+    }
+
+    .navmenu > .nav-container > .nav-header > .close-container > .close-nav {
+        display: block;   
+    }
+
+    .navmenu-on {
+        display: block;
+    }
+
+    .navmenu-off {
+        display: none;
+    }
+}

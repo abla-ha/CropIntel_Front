@@ -1,0 +1,83 @@
+#crops {
+    flex: 1;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+#crops > .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#crops > .grid-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+#crops > .grid-container > .fields-container {
+    margin-top: 25px;
+}
+
+#crops > .grid-container > .fields-container > div {
+    flex: 1;
+    display: flex;
+    gap: 25px;
+}
+
+#crops > .grid-container > .fields-container > div > .field {
+    width: 50%;
+}
+
+#crops > .recommendation-container {
+    margin-top: 55px;
+    width: 100%;
+    text-align: center;
+}
+
+
+#crops > .recommendation-container > h3 {
+    text-align: left;
+}
+
+#crops > .recommendation-container > div {
+    width: 50%;
+    margin: auto;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgba(250, 142, 18, 1);
+    text-align: center;
+}
+
+#crops > .recommendation-container .get-started-btn {
+    width: 200px;
+    height: 50px;
+    font-size: 1.2rem;
+    font-weight: light;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 1024px) {
+    #crops > .grid-container {
+        flex-wrap: wrap-reverse;
+    }
+
+    #crops > .grid-container > .fields-container > div {
+        width: 100%;
+    }
+    
+    #crops > .grid-container > .calendar {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    #crops > .grid-container > .fields-container > div {
+        flex-wrap: wrap;
+    }
+
+    #crops > .grid-container > .fields-container > div > .field {
+        width: 100%;
+    }
+}

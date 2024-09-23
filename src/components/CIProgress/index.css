@@ -1,0 +1,11 @@
+.ciprogress {
+    width: 100%;
+    min-height: 10px;
+    height: 100%;
+    border-radius: 10.5px;
+    overflow: hidden;
+}
+
+.ciprogress > .indicator {
+    border-radius: 10.5px;
+}

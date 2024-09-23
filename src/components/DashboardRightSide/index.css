@@ -1,0 +1,47 @@
+.dashboardrightside {
+    flex: 1;
+}
+
+.dashboardrightside > .event-container > div {
+    display: flex;
+    gap: 25px;
+}
+
+.dashboardrightside > .event-container > div > .events {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 50%;
+}
+
+.dashboardrightside > .event-container > div > .calendar {
+    width: 50%;
+}
+
+.dashboardrightside > .fields-container > div {
+    display: flex;
+    gap: 25px;
+}
+
+.dashboardrightside > .fields-container > div > .field {
+    width: 50%;
+}
+
+@media (max-width: 800px) {
+    .dashboardrightside > .fields-container > div {
+        flex-wrap: wrap;
+    }
+    
+    .dashboardrightside > .fields-container > div > .field {
+        width: 100%;
+    }
+
+    .dashboardrightside > .event-container > div {
+        flex-wrap: wrap;
+    }
+
+    .dashboardrightside > .event-container > div > .events,
+    .dashboardrightside > .event-container > div > .calendar {
+        width: 100%;
+    }
+}

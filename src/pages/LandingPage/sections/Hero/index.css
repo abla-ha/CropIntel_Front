@@ -1,0 +1,122 @@
+.hero {
+    padding: 2rem 0 5rem;
+    background: radial-gradient(ellipse 200% 100% at bottom left, #84a847ee, #EAEEFE 100%);
+    overflow-x: clip;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hero-text {
+    max-width: 100%;
+  }
+  
+  .tag {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    background-color: #f3f4f6;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: -0.05em;
+    background: linear-gradient(to bottom, black, #84a847ee);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-top: 1.5rem;
+  }
+  
+  .hero-description {
+    font-size: 1.25rem;
+    color: #182207ee;
+    line-height: 1.5;
+    margin-top: 1.5rem;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+    margin-top: 1.875rem;
+  }
+  
+  .btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .btn-primary {
+    background-color: #84a847;
+    color: white;
+  }
+  
+  .btn-text {
+    color: #182207;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  
+  .arrow-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  
+  .hero-image {
+    margin-top: 5rem;
+    position: relative;
+  }
+  
+  .cog-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  @media (min-width: 768px) {
+    .hero {
+      padding: 1.25rem 0 2.5rem;
+    }
+  
+    .hero-content {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .hero-text {
+      width: 478px;
+    }
+  
+    .hero-title {
+      font-size: 4.5rem;
+    }
+  
+    .hero-image {
+      margin-top: 0;
+      height: 648px;
+      flex: 1;
+    }
+  
+    .cog-image {
+      position: absolute;
+      height: 100%;
+      width: auto;
+      max-width: none;
+      left: -1.5rem;
+    }
+  }

@@ -1,0 +1,28 @@
+#home {
+    padding: 35px 20px;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+}
+
+#home > .left-side {
+    width: 90px;
+    padding: 35px 20px;
+}
+
+#home .nav-burger {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    #home > .left-side {
+        display: none;
+    }
+
+    #home .nav-burger {
+        display: block;
+        font-size: 3rem;
+        cursor: pointer;
+    }
+}

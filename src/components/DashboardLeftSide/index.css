@@ -1,0 +1,104 @@
+.dashboardleftside {
+    width: 33%;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.dashboardleftside {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.dashboardleftside > div > .indicators-container {
+    margin-top: 35px;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+}
+
+.dashboardleftside > div > .indicators-container > .soil-indicator,
+.dashboardleftside > div > .indicators-container > .weather-indicator {
+    width: 50%;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 10px;
+}
+
+.dashboardleftside > div > .indicators-container > .soil-indicator {
+    background-color: rgba(245, 245, 245, 1);
+}
+
+.dashboardleftside > div > .indicators-container > .weather-indicator {
+    background-color: rgba(224, 247, 205, 1);
+}
+
+.dashboardleftside > div > .indicators-container > .soil-indicator > div,
+.dashboardleftside > div > .indicators-container > .weather-indicator > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.dashboardleftside > div > .indicators-container > .soil-indicator > div > p,
+.dashboardleftside > div > .indicators-container > .soil-indicator > div > b,
+.dashboardleftside > div > .indicators-container > .weather-indicator > div > p,
+.dashboardleftside > div > .indicators-container > .weather-indicator > div > b {
+    font-size: 0.8rem;
+}
+
+.dashboardleftside > div > .indicators-container > .soil-indicator > div > .title,
+.dashboardleftside > div > .indicators-container > .weather-indicator > div > .title  {
+    font-size: 1.2rem;
+}
+
+.dashboardleftside > div > .indicators-container > .soil-indicator > div > div,
+.dashboardleftside > div > .indicators-container > .weather-indicator > div > div  {
+    transform: scale(0.9);
+    transform-origin: top right;
+}
+
+.dashboardleftside > div > .crops-container,
+.dashboardleftside > div > .crops-container > div,
+.dashboardleftside > div > .crops-container > div > div  {
+    width: 100%;
+}
+
+.dashboardleftside > div > .crops-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.dashboardleftside > div > .crops-container > div > div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1277px) {
+    .dashboardleftside {
+        width: 100%;
+        flex-direction: row;
+    }
+    
+    .dashboardleftside > div {
+        width: 50%;
+    }
+}
+
+@media (max-width: 890px) {
+    .dashboardleftside {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .dashboardleftside > div {
+        width: 100%;
+    }
+}

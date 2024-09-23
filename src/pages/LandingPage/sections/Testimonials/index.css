@@ -1,0 +1,132 @@
+/* Testimonials Section */
+.testimonials-section {
+    background-color: white;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  /* Section Heading */
+  .section-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .tag-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .tag {
+    background-color: #f3f4f6;
+    color: #4b5563;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  .section-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-top: 1.25rem;
+  }
+  
+  .section-description {
+    font-size: 1.125rem;
+    color: #6b7280;
+    max-width: 600px;
+    margin: 1.25rem auto 0;
+  }
+  
+  /* Testimonials Container */
+  .testimonials-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+    mask-image: linear-gradient(to bottom, transparent, black 25%, black 75%, transparent);
+    max-height: 738px;
+    overflow: hidden;
+  }
+  
+  /* Testimonial Column */
+  .testimonials-column {
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  .testimonials-column-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  /* Testimonial Card */
+  .testimonial-card {
+    background-color: #f3f4f6;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+  }
+  
+  .testimonial-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #1f2937;
+  }
+  
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1.25rem;
+  }
+  
+  .author-image {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 9999px;
+  }
+  
+  .author-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .author-name {
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25;
+  }
+  
+  .author-username {
+    font-size: 0.875rem;
+    line-height: 1.25;
+    color: #6b7280;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .hidden-mobile {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .hidden-tablet {
+      display: none;
+    }
+  }
+
+  .card {
+    padding: 2.5rem; /* p-10 */
+    border: 1px solid rgba(34, 34, 34, 0.1); /* border-[#222222]/10 */
+    border-radius: 1.5rem; /* rounded-3xl */
+    box-shadow: 0 7px 14px rgba(234, 234, 234, 1); /* shadow-[0_7px_14px_#EAEAEA] */
+    max-width: 20rem; /* max-w-xs */
+    width: 100%; /* w-full */
+  }
+  

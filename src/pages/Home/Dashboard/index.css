@@ -1,0 +1,23 @@
+#dashboard {
+    flex: 1;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+#dashboard > .dashboard-greet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#dashboard > .dashboard-greet > h1 {
+    padding-top: 15px;
+    font-size: 2.5rem;
+}
+
+#dashboard > .dashboard-container {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+}

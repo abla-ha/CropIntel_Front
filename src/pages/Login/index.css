@@ -1,0 +1,110 @@
+#login {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+#login > .left-side,
+#login > .right-side {
+    width: 50%;
+    height: 100%;
+}
+
+#login > .right-side {
+    background-image: url(/images/crop-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#login > .right-side > .overlay {
+    background-color: rgba(74, 124, 38, 0.29);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login > .right-side > .overlay > img {
+    width: 30%;
+}
+
+#login > .left-side {
+    overflow-y: scroll;
+    padding: 55px;
+    box-sizing: border-box;
+}
+
+#login > .left-side > h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: rgba(30, 30, 30, 1);
+    &>span {
+        color: rgba(49, 159, 67, 1);
+    }
+}
+
+#login > .left-side > h2 {
+    text-align: center;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: rgba(30, 30, 30, 1);
+}
+
+#login > .left-side > form {
+    width: 75%;
+    margin: 35px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+
+#login > .left-side > form > span {
+    color: rgba(30, 30, 30, 1);
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+#login > .left-side > form > .external-providers {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    box-sizing: border-box;
+}
+
+#login > .left-side > form > .external-providers > button {
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#login > .left-side > form > .sign-btn {
+    font-size: 1.5rem;
+    height: 80px;
+}
+
+#login > .left-side > form > p {
+    color: rgba(30, 30, 30, 1);
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+@media (max-width: 1024px) {
+    #login > .right-side {
+        display: none;
+    }
+
+    #login > .left-side {
+        width: 100%;
+    }
+}
+
+@media (max-width: 690px) {
+    #login > .left-side > form {
+        width: 98%;
+    }
+}

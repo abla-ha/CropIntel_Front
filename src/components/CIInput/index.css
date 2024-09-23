@@ -1,0 +1,32 @@
+.ciinput {
+    width: 100%;
+    display: flex;
+    border-radius: 40.5px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 25px;
+    box-sizing: border-box;
+    gap: 15px;
+    align-items: center;
+    cursor: text;
+}
+
+.ciinput > input {
+    flex: 1;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 1rem;
+    font-family: "IBM Plex Sans", sans-serif;
+    background: none;
+}
+
+.ciinput > .visibility-icon {
+    cursor: pointer;
+}
+
+.ciinput > .icon, 
+.ciinput > .visibility-icon > * {
+    font-size: 2rem;
+    color: rgba(30, 30, 30, 1);
+}
